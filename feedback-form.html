@@ -18,9 +18,9 @@
 		</div>
 		<nav class="mobile-menu">
 			<ul>
-				<li><a href="">Главная</a></li>
-				<li><a href="">Раскрытие информации</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="./index.html">Главная</a></li>
+				<li><a href="./information.html">Раскрытие информации</a></li>
+				<li><a href="./contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -40,40 +40,69 @@
 			<div class="wrap">
 				<div class="hero-section__content">
 					<h1 class="page-title">
-						Раскрытие информации
+						Контакты
 					</h1>
 					<div class="tabs-hor">
-						<a class="tabs-hor__item" href="./information.html">Информационные сообщения</a>
-						<a class="tabs-hor__item active">Паевые фонды</a>
-						<a class="tabs-hor__item" href="./docs.html">
-							<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M10.0781 12.8906L15 17.8125L19.9219 12.8906" stroke="#C85752" stroke-width="2" stroke-linecap="round"
-									stroke-linejoin="round" />
-								<path d="M15 4.6875V17.8125" stroke="#C85752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-								<path
-									d="M25.3125 17.8125V24.375C25.3125 24.6236 25.2137 24.8621 25.0379 25.0379C24.8621 25.2137 24.6236 25.3125 24.375 25.3125H5.625C5.37636 25.3125 5.1379 25.2137 4.96209 25.0379C4.78627 24.8621 4.6875 24.6236 4.6875 24.375V17.8125"
-									stroke="#C85752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-							Документы компании
-						</a>
+						<a class="tabs-hor__item" href="./contacts.html">Контактная информация</a>
+						<a class="tabs-hor__item active">Обратная связь</a>
+						<a class="tabs-hor__item" href="./get-info.html">Предоставление информации</a>
 					</div>										
 				</div>
 			</div>
 		</section>		
 		
-		<section class="inner-content">
+		<section class="form-page">
 			<div class="wrap">				
-				<div class="pifs-grid">
-					<a class="pifs-grid__item" href="">ЗПИФ недвижимости «Ангара Эстейт»</a>
-					<a class="pifs-grid__item" href="">ИПИФ комбинированный «Прагматик»</a>
-					<a class="pifs-grid__item" href="">ЗПИФ комбинированный "Дельта"</a>
-					<a class="pifs-grid__item" href="">ЗПИФ комбинированный "Темп"</a>
-					<a class="pifs-grid__item" href="">ЗПИФ смешанных инвестиций "Каскад"</a>
-					<a class="pifs-grid__item" href="">ЗПИФ недвижимости "Трейд Эстейт"</a>
-					<a class="pifs-grid__item" href="">ЗПИФ рентный "Перспектива"</a>
-					<a class="pifs-grid__item" href="">ЗПИФ долгосрочных прямых инвестиций "Фонд стратегических инвестиций 6"</a>
-				</div>				
-			</div>						
+				<div class="feedback">
+					<form class="feedback__form form">
+						<div class="form__input-block required">
+							<input class="text-input errored" type="text" name="theme" placeholder="Тема" id="" required>
+							<span class="error-message">Пожалуйста, заполните это поле</span>
+						</div>
+						<div class="form__input-block required">
+							<input class="text-input" type="text" name="name" placeholder="Фамилия, имя" id="" required>
+							<span class="error-message">Пожалуйста, заполните это поле</span>
+						</div>
+						<div class="form__double-fields">
+							<div class="form__input-block required">
+								<input class="text-input" type="tel" name="phone" placeholder="Мобильный телефон" id="" required>
+								<span class="error-message">Пожалуйста, заполните это поле</span>
+							</div>
+							<div class="form__input-block required">
+								<input class="text-input" type="email" name="email" placeholder="Электронная почта" id="" required>
+								<span class="error-message">Пожалуйста, заполните это поле</span>
+							</div>
+						</div>
+						<div class="form__input-block required">
+							<textarea class="textarea" name="message" placeholder="Текст сообщения" required></textarea>
+							<span class="error-message">Пожалуйста, заполните это поле</span>
+						</div>
+						<div class="form__upload-files">
+							<div class="drop-field">
+								<label class="file-input">
+									<input type="file">
+									<span>Выберите файл</span>
+								</label>
+								<span>&nbsp;или перетащите его в&nbsp;выделенную область</span>
+							</div>
+						</div>						
+						<div class="form__submit-block">
+							<button class="btn btn_primary" type="submit">Отправить</button>
+							<span class="form__agreement">
+								Отправляя сообщение, вы даете согласие на <a class="red-link" href="">обработку персональных данных</a>
+							</span>
+						</div>
+					</form>
+					<div class="feedback__description">
+						<p class="regular-text">В данном разделе Вы можете задать вопрос, направить предложение, оставить отзыв, обратиться за разъяснением.</p>						
+						<p class="regular-text">Обращения, поступающие в адрес Управляющей компании, рассматриваются в срок не позднее пятнадцати дней со дня
+						поступления, в случае, если не требуется дополнительного изучения и проверки.<p>						
+						<p class="regular-text">Управляющая компания вправе при рассмотрении обращения запросить дополнительные документы и сведения у обратившегося
+						лица.</p>						
+						<p class="regular-text">Максимальный срок рассмотрения обращения — не позднее тридцати дней со дня поступления.</p>
+					</div>
+				</div>
+			</div>							
 		</section>
 
 		<footer class="footer footer_inner">
